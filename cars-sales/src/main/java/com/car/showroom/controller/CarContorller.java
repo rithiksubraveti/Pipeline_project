@@ -39,15 +39,15 @@ class CarController {
 			throw new ResourceNotFoundException("No car found with Id: "+dealerId);
 	}
 
-	// Adding new car to the DB
+	/*// Adding new car to the DB
 	@PostMapping("/dealers")
 	public Dealers createNewDealer(@RequestBody Dealers dealer) {
 		return carRepo.save(dealer);
-	}
+	}*/
 
 	// Update car details in the DB
 	
-	  @PutMapping("dealers/{id}") 
+	 /* @PutMapping("dealers/{id}") 
 	  public ResponseEntity updateDealer(@PathVariable(value="id")long dealerId, @RequestBody Dealers dealerDetails)throws ResourceNotFoundException 
 	  {
 		  Dealers dealer = carRepo.findById(dealerId).orElseThrow(() -> new ResourceNotFoundException("No car found with Id: " + dealerId));
@@ -57,7 +57,7 @@ class CarController {
 		  dealer.setCars(dealerDetails.getCars());
 		  carRepo.save(dealer);
 		  return ResponseEntity.ok().body(dealer);	  
-	  }
+	  }*/
 	 
 	// Deleting car details from the DB
 	@DeleteMapping("/dealers/{id}")
