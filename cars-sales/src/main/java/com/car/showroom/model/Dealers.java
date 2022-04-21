@@ -23,10 +23,10 @@ public class Dealers
     @Column(name = "dealer_address")
     private String dealerAddress;
 
-	  @OneToMany(cascade = CascadeType.ALL)
+	  /*@OneToMany(cascade = CascadeType.ALL)
 	  @JoinTable(name = "carsdealers", joinColumns = @JoinColumn(name = "dealer_id"),
 	  inverseJoinColumns = @JoinColumn(name = "car_id"))
-	  private List<Cars> car; 
+	  private List<Cars> car; */
 	
 	public long getId() 
 	{
@@ -62,13 +62,13 @@ public class Dealers
 	}
 
 	
-	  public List<Cars> getCars() { return car; }
+	  /*public List<Cars> getCars() { return car; }
 	  
-	  public void setCars(List<Cars> car) { this.car = car; }
+	  public void setCars(List<Cars> car) { this.car = car; }*/
 	 
-	public Dealers(String dealerName, String dealerEmail, String dealerAddress)
+	public Dealers(long dealerId, String dealerName, String dealerEmail, String dealerAddress)
 	{
-		
+		this.id = dealerId;
 		this.dealerName = dealerName;
 		this.dealerEmail = dealerEmail;
 		this.dealerAddress = dealerAddress;
@@ -77,4 +77,5 @@ public class Dealers
 		//super();
 		// TODO Auto-generated constructor stub
 	}
+	
 }

@@ -72,8 +72,6 @@ public class ControllerMockMvcTests {
 		//Mocking		
 		when (carService.getDealers()).thenReturn(myDealers);
 		this.mockMvc.perform(get("/dealers")).andExpect(status().isFound()).andDo(print());
-		//ResponseEntity<List<Dealers>>response= carController.getDealers();
-
 	}
 	@Test
 	@Order(2)
@@ -90,15 +88,12 @@ public class ControllerMockMvcTests {
 		.andExpect(MockMvcResultMatchers.jsonPath(".dealerEmail").value("auto@cars.ie"))
 		.andExpect(MockMvcResultMatchers.jsonPath(".dealerAddress").value("Dublin"))
 		.andDo(print());
-		//ResponseEntity<Dealers>response= carController.getDealerById(dealerId);
-		
 	}
 	@Test
 	@Order(3)
 	public void test_addDealers() throws Exception
 	{
 		dealers = new Dealers(3,"Jennigs Autocars","jennings@autocars.ie","Dublin");
-		
 		//Mocking		
 		when (carService.createNewDealer(dealers)).thenReturn(dealers);
 		ObjectMapper mapper = new ObjectMapper();
@@ -108,8 +103,6 @@ public class ControllerMockMvcTests {
 				.contentType(MediaType.APPLICATION_JSON))
 				.andExpect(status().isCreated())
 				.andDo(print());
-		//ResponseEntity<Dealers>response= carController.createNewDealer(dealer);
-
 	}
 	@Test
 	@Order(4)
@@ -127,12 +120,7 @@ public class ControllerMockMvcTests {
 				.content(jsonBody)
 				.contentType(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
-				/*.andExpect(MockMvcResultMatchers.jsonPath(".dealerName").value("Ray Automobiles"))
-				.andExpect(MockMvcResultMatchers.jsonPath(".dealerEmail").value("ray@carservice.ie"))
-				.andExpect(MockMvcResultMatchers.jsonPath(".dealerAddress").value("Dublin"))*/
 				.andDo(print());
-		//ResponseEntity<Dealers>response= carController.createNewDealer(dealer);
-
 	}
 	@Test
 	@Order(5)
@@ -145,7 +133,6 @@ public class ControllerMockMvcTests {
 		when (carService.getDealerById(dealerId)).thenReturn(dealers);
 		this.mockMvc.perform(delete("/deletedealers/{id}",dealerId))
 				.andExpect(status().isOk());
-		
 	}
 	
 }

@@ -27,27 +27,7 @@ INSERT INTO cars (id, car_make, car_model, car_year) VALUES (19, 'Opel', 'Corsa'
 INSERT INTO cars (id, car_make, car_model, car_year) VALUES (20, 'Volkswagen', 'Polo',2019);
 INSERT INTO cars (id, car_make, car_model, car_year) VALUES (21, 'Audi', 'A4', 2012);
 
-INSERT INTO carsdealers (car_id,dealer_id) VALUES (1, 1);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (2, 5);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (3, 3);
-INSERT INTO carsdealers (car_id,dealer_id) VALUES (4, 2);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (5, 6);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (6, 5);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (7, 4);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (8, 1);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (9, 6);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (10, 2);
-INSERT INTO carsdealers (car_id,dealer_id) VALUES (11, 5);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (12, 5);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (13, 3);
-INSERT INTO carsdealers (car_id,dealer_id) VALUES (14, 6);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (15, 1);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (16, 5);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (17, 4);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (18, 2);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (19, 6);
-INSERT INTO carsdealers (car_id,dealer_id)  VALUES (20, 1);
-INSERT INTO carsdealers (car_id,dealer_id) VALUES (21, 3);
+
 
 
 
