@@ -83,7 +83,7 @@ public class CarController {
 	  }
 	 
 	// Deleting dealer details from the DB
-	@DeleteMapping("/deletedealers/{id}")
+	@DeleteMapping("/deleteDealers/{id}")
 	public ResponseEntity<Dealers> deleteDealer(@PathVariable(value = "id")long dealerId)
 	{
 		Dealers dealer = null;
