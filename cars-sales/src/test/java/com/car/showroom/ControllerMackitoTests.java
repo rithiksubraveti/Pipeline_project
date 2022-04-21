@@ -18,7 +18,7 @@ import org.springframework.http.ResponseEntity;
 
 import com.car.showroom.controller.CarController;
 import com.car.showroom.model.Dealers;
-import com.car.showrooom.service.CarService;
+import com.car.showroom.service.CarService;
 
 @TestMethodOrder(OrderAnnotation.class)
 @SpringBootTest(classes= {ControllerMackitoTests.class})

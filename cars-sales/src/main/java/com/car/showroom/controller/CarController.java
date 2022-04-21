@@ -2,8 +2,6 @@ package com.car.showroom.controller;
 
 
 import java.util.List;
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,14 +14,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.car.showroom.model.Dealers;
 import com.car.showroom.repository.CarRepository;
-import com.car.showrooom.service.CarService;
+import com.car.showroom.service.CarService;
+
 
 @RestController
 public class CarController {
 	@Autowired
-	public CarRepository carRepo;
+	CarRepository carRepo;
 	@Autowired
-    private CarService carService;
+	CarService carService;
 
 	// Get list of all the dealers in the DB
 	@GetMapping("/dealers")

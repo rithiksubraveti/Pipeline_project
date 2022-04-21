@@ -34,7 +34,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.car.showroom.controller.CarController;
 import com.car.showroom.model.Dealers;
-import com.car.showrooom.service.CarService;
+import com.car.showroom.service.CarService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.persistence.*;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 
 @Entity
@@ -23,10 +23,6 @@ public class Dealers
     @Column(name = "dealer_address")
     private String dealerAddress;
 
-	  /*@OneToMany(cascade = CascadeType.ALL)
-	  @JoinTable(name = "carsdealers", joinColumns = @JoinColumn(name = "dealer_id"),
-	  inverseJoinColumns = @JoinColumn(name = "car_id"))
-	  private List<Cars> car; */
 	
 	public long getId() 
 	{
@@ -61,10 +57,6 @@ public class Dealers
 		this.dealerAddress = dealerAddress;
 	}
 
-	
-	  /*public List<Cars> getCars() { return car; }
-	  
-	  public void setCars(List<Cars> car) { this.car = car; }*/
 	 
 	public Dealers(long dealerId, String dealerName, String dealerEmail, String dealerAddress)
 	{
