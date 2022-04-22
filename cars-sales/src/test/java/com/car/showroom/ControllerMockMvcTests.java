@@ -131,7 +131,7 @@ public class ControllerMockMvcTests {
 		long dealerId=1;
 		//Mocking		
 		when (carService.getDealerById(dealerId)).thenReturn(dealers);
-		this.mockMvc.perform(delete("/deletedealers/{id}",dealerId))
+		this.mockMvc.perform(delete("/deleteDealers/{id}",dealerId))
 				.andExpect(status().isOk());
 	}
 	
