@@ -30,8 +30,8 @@ public class CarController {
 		List<Dealers> dealers = carService.getDealers();
 		return new ResponseEntity<List<Dealers>>(dealers,HttpStatus.FOUND);
 	}
-	//Testing webhook comment
-
+	
+	//Testing of pipeline
 	// Get dealer based on Id
 	@GetMapping("/dealers/{id}")
 	public ResponseEntity<Dealers> getDealerById(@PathVariable(value = "id") long dealerId) {
